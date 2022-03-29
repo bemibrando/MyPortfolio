@@ -7,10 +7,9 @@ Lavander Blue: C9CCFF
 Royal Blue Light: 5F6BD4
 */
 
-/*=========== GOOGLE FONTS ===========*/
+/*#region GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-/*=========== GOOGLE FONTS ===========*/
 :root {
     --header-height: 3rem;
   
@@ -58,8 +57,9 @@ Royal Blue Light: 5F6BD4
     --z-fixed: 100;
     --z-modal: 1000;
 }
+/*#endregion*/
 
-/* Font size for large devices */
+/*#region FONT SIZE FOR LARGE DEVICES */
 @media screen and (min-width: 968px) {
     :root {
         --big-font-size: 3rem;
@@ -72,11 +72,14 @@ Royal Blue Light: 5F6BD4
     }   
     
 }
+/*#endregion*/
 
-/*=========== Button Dark/Light ===========*/
+/*#region BUTTON DARK/LIGHT */
 
 
-/*=========== BASE ===========*/
+/*#endregion*/
+
+/*#region BASE */
 *{
     box-sizing: border-box;
     padding: 0;
@@ -112,8 +115,9 @@ img{
     max-width: 100%;
     height: auto;
 }
+/*#endregion*/
 
-/*=========== REUSABLE CSS CLASSES ===========*/
+/*#region REUSABLE CSS CLASSES */
 .section{
     padding: 2rem 0 4rem;
 }
@@ -132,8 +136,9 @@ img{
 .section__subtitle{
     text-align: center;
 }
+/*#endregion*/
 
-/*=========== LAYOUT ===========*/
+/*#region LAYOUT */
 .container{
     max-width: 768px;
     margin-left: var(--mb-1-5);
@@ -153,8 +158,9 @@ img{
     z-index: var(--z-fixed);
     background-color: var(--body-color);
 }
+/*#endregion*/
 
-/*=========== NAV ===========*/
+/*#region NAV */
 .nav{
     max-width: 968px;
     height: var(--header-height);
@@ -234,8 +240,9 @@ img{
 .show-menu{
     bottom: 0;
 }
+/*#endregion*/
 
-/*=========== HOME ===========*/
+/*#region HOME */
 .home__container{
     gap: 1rem;
 }
@@ -316,8 +323,9 @@ img{
 .home__scroll-arrow{
     font-size: 1.25rem;
 }
+/*#endregion*/
 
-/*=========== BUTTONS ===========*/
+/*#region BUTTONS */
 .button{
     display: inline-block;
     background-color: var(--first-color);
@@ -335,6 +343,15 @@ img{
     font-size: 1.25;
     margin-left: var(--mb-0-5);
     transition: .3s;
+}
+
+.button--white{
+    background-color: #FFF;
+    color: var(--first-color);
+}
+
+.button--white:hover{
+    background-color: #FFF;
 }
 
 .button--flex{
@@ -356,8 +373,9 @@ img{
     background-color: transparent;
     color: var(--first-color-alt);
 }
+/*#endregion*/
 
-/*=========== ABOUT ===========*/
+/*#region ABOUT */
 .about__img{
     width: 200px;
     border-radius: .5rem;
@@ -397,8 +415,9 @@ img{
     display: flex;
     justify-content: center;
 }
+/*#endregion*/
 
-/*=========== SKILLS ===========*/
+/*#region SKILLS */
 .skills__container{
     row-gap: 0;
 }
@@ -475,7 +494,7 @@ img{
     transform: rotate(-180deg);
 }
 
-/*===== FRONT-END =====*/
+/*#region FRONT-END */
 .skills__htmlcss{
     width: 90%;
 }
@@ -488,8 +507,9 @@ img{
 .skills__reactvue{
     width: 65%;
 }
+/*#endregion*/
 
-/*===== BACK-END =====*/
+/*#region NACK-END */
 .skills__csharp{
     width: 80%;
 }
@@ -502,8 +522,9 @@ img{
 .skills__api{
     width: 55%;
 }
+/*#endregion*/
 
-/*===== SOFT SKILLS =====*/
+/*#region SOFT SKILLS */
 .skills__htmlcss{
     width: 90%;
 }
@@ -516,8 +537,9 @@ img{
 .skills__reactvue{
     width: 65%;
 }
+/*#endregion*/
 
-/*===== EXTRA SKILLS =====*/
+/*#region EXTRA SKILLS */
 .skills__htmlcss{
     width: 90%;
 }
@@ -530,8 +552,12 @@ img{
 .skills__reactvue{
     width: 65%;
 }
+/*#endregion*/
 
-/*=========== QUALIFICATION ===========*/
+
+/*#endregion*/
+
+/*#region QUALIFICATION */
 .qualification__tabs{
     display: flex;
     justify-content: space-evenly;
@@ -602,8 +628,10 @@ img{
 .qualification__button.qualification__active{
     color: var(--first-color);
 }
+/*#endregion*/
 
-/*=========== SERVICES ===========*/
+/*#region SERVICES */
+
 .services__container{
     gap: 1.5rem;
     grid-template-columns: repeat(2, 1fr);
@@ -698,16 +726,256 @@ img{
     visibility: visible;
 }
 
-/*=========== PORTFOLIO ===========*/
+/*#endregion*/
+
+/*#region PORTFOLIO */
+.portfolio__container{
+    overflow: initial;
+}
+
+.portfolio__content{
+    padding: 0 1.5rem;
+}
+
+.portfolio__img{
+    width: 265px;
+    border-radius: .5rem;
+    justify-self: center;
+}
+
+.portfolio__title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.portfolio__description{
+    margin-bottom: var(--mb-0-75);
+}
+
+.portfolio__button:hover .button__icon{
+    transform: translateX(.25rem);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    content: '';
+}
+
+.swiper-portfolio-icon{
+    font-size: 2rem;
+    color: var(--first-color);
+}
+
+.swiper-button-prev{
+    left: -.5rem;
+}
+
+.swiper-button-next{
+    right: -.5rem;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets{
+    bottom: -2.5rem;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: var(--first-color);
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullets{
+    outline: none;
+}
+/*#endregion*/
+
+/*#region PROJECTS IN MIND */
+.project{
+    text-align: center;
+}
+
+.project__bg{
+    background-color: var(--first-color-second);
+    padding-top: 3rem;
+}
+
+.project__title{
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-0-75);
+}
+
+.project__description{
+    margin-bottom: var(--mb-1-5);
+}
+
+.project__title,
+.project__description{
+    color: #FFF;
+}
+
+.project__img{
+    width: 232px;
+    justify-self: center;
+}
+
+/*#endregion*/
+
+/*#region TESTIMONIAL */
+.testimonial__data,
+.testimonial__header{
+    display: flex;
+}
+
+.testimonial__data{
+    justify-content: space-between;
+    margin-bottom: var(--mb-1);
+}
+
+.testimonial__img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: var(--mb-0-75);
+}
+
+.testimonial__name{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.testimonial__client{
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.testimonial__description{
+    margin-bottom: var(--mb-2-5);
+}
+
+.testimonial__icon-star{
+    color: var(--first-color);
+}
+
+.swiper-container .swiper-pagination-testimonial{
+    bottom: 0;
+}
+
+/*#endregion*/
+
+/*#region CONTACT ME */
+.contact__container{
+    row-gap: 3rem;
+}
+
+.contact__information{
+    display: flex;
+    margin-bottom: var(--mb-2);
+}
+
+.contact__icon{
+    font-size: 2rem;
+    color: var(--first-color);
+    margin-right: var(--mb-0-75);
+}
+
+.contact__title{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.contact__subtitle{
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.contact__content{
+    background-color: var(--input-color);
+    border-radius: .5rem;
+    padding: .75rem 1rem .25rem;
+}
+
+.content__label{
+    font-size: var(--smaller-font-size);
+    color: var(--title-color);
+}
+
+.contact__input{
+    width: 100%;
+    background-color: var(--input-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    border: none;
+    outline: none;
+    padding: .25rem .5rem .5rem 0;
+}
+
+/*#endregion*/
+
+/*#region FOOTER */
+.footer{
+    padding-top: 2rem;
+}
+
+.footer__container{
+    row-gap: 3.5rem;
+}
+
+.footer__bg{
+    background-color: var(--first-color-second);
+    padding: 2rem 0 3rem;
+}
+
+.footer__title{
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--mb-0-25);
+}
+
+.footer__subtitle{
+    font-size: var(--small-font-size);
+}
+
+.footer__link{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.footer__link:hover{
+    color: var(--first-color-lighter);
+}
+
+.footer__social{
+    font-size: 1.25rem;
+    margin-right: var(--mb-1-5);
+}
+
+.footer__social:hover{
+    color: var(--first-color-lighter);
+}
+
+.footer__copy{
+    font-size: var(--smaller-font-size);
+    text-align: center;
+    color: var(--text-color-light);
+    margin-top: var(--mb-3);
+}
+
+.footer__title,
+.footer__subtitle,
+.footer__link,
+.footer__social{
+    color: #fff;
+}
+
+/*#endregion*/
+
+/*#region SCROLL UP */
 
 
-/*=========== PROJECTS IN MIND ===========*/
+/*#endregion*/
+
+/*#region MEDIA QUERIES */
 
 
-/*=========== TESTIMONIAL ===========*/
-
-
-/*=========== CONTACT ME ===========*/
-
-
-/*=========== PORTFOLIO ===========*/
+/*#endregion*/
