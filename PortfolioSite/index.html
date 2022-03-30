@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,12 +25,12 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link">
+                            <a href="#home" class="nav__link active-link">
                                 <i class="uil uil-estate nav__icon"></i> Home
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a href="#about" class="nav__link">
+                            <a href="#about" class="nav__link ">
                                 <i class="uil uil-user nav__icon"></i> About
                             </a>
                         </li>
@@ -64,6 +64,9 @@
                 </div>
 
                 <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
                     <div class="nav__toggle" id="nav-toggle">
                         <i class="uil uil-apps"></i>
                     </div>
@@ -111,11 +114,11 @@
                         </div>
 
                         <div class="home__data">
-                            <h1 class="home__title">Hi, I'm Bianca Brando</h1>
+                            <h1 class="home__title">Hi,<br>I'm Bianca Emi</h1>
                             <h3 class="home__subtitle">Front-end Developer</h3>
-                            <p class="home__description">Experience in web development</p>
+                            <p class="home__description">I've been passionate about web development</p>
                             <a href="#contact" class="button button--flex">
-                                Contact Me<i class="uil uil-message button__icon"></i>
+                                    Contact Me<i class="uil uil-message button__icon arrow__animation"></i>
                             </a>
                         </div>
                     </div>
@@ -139,13 +142,17 @@
                     <img src="assets/img/about.png" alt="" class="about__img">
 
                     <div class="about__data">
-                        <p class="about__description">Web developer with some knowledge in web technology and UI / UX design.</p>
+                        <p class="about__description">
+                            I'm an avid reader, well-organised person, problem solver and independent coder.
+                            <br>
+                            I currently work remotely with a selected freelance client base being open for new opportunities.
+                        </p>
                     </div>
 
                     <div class="about__info">
                         <div>
-                            <span class="about__info-title">01+</span>
-                            <span class="about__info-name">Years <br> experience</span>
+                            <span class="about__info-title">01</span>
+                            <span class="about__info-name">Year <br> experience</span>
                         </div>
 
                         <div>
@@ -153,15 +160,15 @@
                             <span class="about__info-name">Completed <br> projects</span>
                         </div>
 
-                        <div>
+                        <!-- <div>
                             <span class="about__info-title">01+</span>
                             <span class="about__info-name">Companies <br> worked</span>
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="about__buttons">
                         <a download="" href="assets/pdf/BiancaEmi_Curriculum.pdf" class="button button--flex">
-                            Download CV<i class="uil uil-download-alt button__icon"></i>
+                            Download CV<i class="uil uil-download-alt button__icon down__animation"></i>
                         </a>
                     </div>
                 </div>
@@ -178,9 +185,11 @@
                         <div class="skills__header">
                             <i class="uil uil-brackets-curly skills__icon"></i>
 
-                            <div>
+                            <div class="skills__titlegrid">
                                 <h1 class="skills__title">Front-end developer</h1>
-                                <span class="skills__suvtitle">More than 1 year</span>
+                                <div class="skills__bar">
+                                     <span class="skills__percentage skills__front"></span>
+                                </div>
                             </div>
 
                             <i class="uil uil-angle-down skills__arrow"></i>
@@ -190,43 +199,17 @@
                             <div class="skills__data">
                                 <div class="skills__title">
                                     <h3 class="skills__name">HTML & CSS</h3>
-                                    <span class="skills__number">90%</span>
                                 </div>
-                                <div class="skills__bar">
-                                     <span class="skills__percentage skills__htmlcss"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
                                 <div class="skills__title">
                                     <h3 class="skills__name">JavaScript</h3>
-                                    <span class="skills__number">85%</span>
                                 </div>
-                                <div class="skills__bar">
-                                     <span class="skills__percentage skills__js"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
                                 <div class="skills__title">
                                     <h3 class="skills__name">npm</h3>
-                                    <span class="skills__number">70%</span>
                                 </div>
-                                <div class="skills__bar">
-                                     <span class="skills__percentage skills__npm"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
                                 <div class="skills__title">
                                     <h3 class="skills__name">React & Vue</h3>
-                                    <span class="skills__number">65%</span>
-                                </div>
-                                <div class="skills__bar">
-                                     <span class="skills__percentage skills__reactvue"></span>
                                 </div>
                             </div>
-
 
                         </div>
                     </div>
@@ -236,9 +219,11 @@
                         <div class="skills__header">
                             <i class="uil uil-server-network skills__icon"></i>
 
-                            <div>
+                            <div class="skills__titlegrid">
                                 <h1 class="skills__title">Back-end developer</h1>
-                                <span class="skills__suvtitle">More than 1 year</span>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__front"></span>
+                                </div>
                             </div>
 
                             <i class="uil uil-angle-down skills__arrow"></i>
@@ -248,55 +233,33 @@
                             <div class="skills__data">
                                 <div class="skills__title">
                                     <h3 class="skills__name">C#</h3>
-                                    <span class="skills__number">80%</span>
                                 </div>
-                                <div class="skills__bar">
-                                     <span class="skills__percentage skills__csharp"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
                                 <div class="skills__title">
                                     <h3 class="skills__name">Node Js</h3>
-                                    <span class="skills__number">70%</span>
                                 </div>
-                                <div class="skills__bar">
-                                     <span class="skills__percentage skills__nodejs"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
                                 <div class="skills__title">
                                     <h3 class="skills__name">MySQL</h3>
-                                    <span class="skills__number">60%</span>
                                 </div>
-                                <div class="skills__bar">
-                                     <span class="skills__percentage skills__mysql"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
                                 <div class="skills__title">
                                     <h3 class="skills__name">API</h3>
-                                    <span class="skills__number">55%</span>
-                                </div>
-                                <div class="skills__bar">
-                                     <span class="skills__percentage skills__api"></span>
                                 </div>
                             </div>
-
 
                         </div>
                     </div>
 
-                    <div>
                         <!--====== SKILLS 3 ======-->
                         <div class="skills__content skills__close">
                             <div class="skills__header">
                                 <i class="uil uil-folder-heart skills__icon"></i>
 
                                 <div>
-                                    <h1 class="skills__title">Soft Skills</h1>
+                                    <ul>
+                                        <h1 class="skills__title">Soft Skills</h1>
+                                        <div class="skills__bar">
+                                             <span class="skills__percentage skills__front"></span>
+                                        </div>
+                                    </ul>
                                 </div>
 
                                 <i class="uil uil-angle-down skills__arrow"></i>
@@ -306,40 +269,9 @@
                                 <div class="skills__data">
                                     <div class="skills__title">
                                         <h3 class="skills__name">C#</h3>
-                                        <span class="skills__number">80%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__csharp"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__title">
                                         <h3 class="skills__name">Node Js</h3>
-                                        <span class="skills__number">70%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__nodejs"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__title">
                                         <h3 class="skills__name">MySQL</h3>
-                                        <span class="skills__number">60%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__mysql"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__title">
                                         <h3 class="skills__name">API</h3>
-                                        <span class="skills__number">55%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__api"></span>
                                     </div>
                                 </div>
 
@@ -352,9 +284,11 @@
                             <div class="skills__header">
                                 <i class="uil uil-brain skills__icon"></i>
 
-                                <div>
+                                <div class="skills__titlebar">
                                     <h1 class="skills__title">Extra Skills</h1>
-                                    <span class="skills__suvtitle">More than 1 year</span>
+                                    <div class="skills__bar">
+                                         <span class="skills__percentage skills__extra"></span>
+                                    </div>
                                 </div>
 
                                 <i class="uil uil-angle-down skills__arrow"></i>
@@ -364,46 +298,14 @@
                                 <div class="skills__data">
                                     <div class="skills__title">
                                         <h3 class="skills__name">C#</h3>
-                                        <span class="skills__number">80%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__csharp"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__title">
                                         <h3 class="skills__name">Node Js</h3>
-                                        <span class="skills__number">70%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__nodejs"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__title">
                                         <h3 class="skills__name">MySQL</h3>
-                                        <span class="skills__number">60%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__mysql"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__title">
                                         <h3 class="skills__name">API</h3>
-                                        <span class="skills__number">55%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__api"></span>
                                     </div>
                                 </div>
-
 
                             </div>
-                        </div>
+
                     </div>
                 </div>
             </section>
@@ -482,7 +384,7 @@
                         <!--====== SERVICES 1 ======-->
                         <div class="services__content">
                             <div>
-                                <i class="uil uil-web-grid"></i>
+                                <i class="uil uil-web-grid services__icon"></i>
                                 <h3 class="services__title">UI / UX <br> Designer</h3>
                             </div>
 
@@ -782,7 +684,7 @@
             <!--============ CONTACT ME ===========-->
             <section class="contact section" id="contact">
                 <h2 class="section__title">Contact Me</h2>
-                <span class="section__subtitle">Get in touch</span>
+                <span class="section__subtitle">If you have any request or question, Get in touch!</span>
 
                 <div class="contact__container container grid">
                     <div>
@@ -880,7 +782,9 @@
         </footer>
 
         <!--============ SCROLL UP ===========-->
-
+        <a href="" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon scroll__animation"></i>
+        </a>
 
         <!--============ SWIPER JS ===========-->
         <script src="assets/js/swiper-bundle.min.js"></script>
