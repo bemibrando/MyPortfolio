@@ -1,0 +1,14 @@
+{
+  "name": "landingpagechallenge",
+  "version": "1.0.0",
+  "description": "Front-end Junior Lvl, Blogr landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "juniland"
+  ],
+  "author": "bemibrando",
+  "license": "ISC"
+}

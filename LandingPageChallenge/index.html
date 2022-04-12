@@ -3,9 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!--============ UNICONS ===========-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <!--============ CSS ===========-->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Frontend Mentor | [Blogr]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,29 +20,60 @@
   </style>
 </head>
 <body>
-  Product
+    <!--============ HEADER ===========-->
+    <header class="header" id="header">
+      <nav class="nav primary-nav container">
+        <a href="index.html" class="nav__logo"><img src="assets/images/logo.svg" alt="blogr"></a>
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item"><a href="#">Product</a></li>
+            <ul class="nav__dropdown">
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Marketplace</a></li>
+              <li><a href="#">Freatures</a></li>
+              <li><a href="#">Integrations</a></li>
+            </ul>
+            <li class="nav__item">
+              <a href="#">Company</a>
+            </li>
+              <ul class="nav__dropdown">
+                <li>
+                  <a href="#">About</a>
+                </li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            <li class="nav__item"><a href="#">Connect</a></li>
+            <ul class="nav__dropdown">
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </ul>
 
-  Company
+        </div>
+          
+          <div class="nav__btns">
+            <!-- Theme change button -->
+            <i class="uil uil-moon change-theme" id="theme-button"></i>
 
-  About
-  Team
-  Blog
-  Careers
+            <div class="nav__toggle" id="nav-toggle">
+              <i class="uil uil-bars"></i>
+            </div>
+            <div class="nav__userlog" id="nav-userlog">
+              <ul class="nav__user">
+                <li class="nav__login"></li>
+                <li class="nav__singup"></li>
+              </ul>
+            </div>
+          </div>
 
-  Connect
 
-  Contact
-  Newsletter
-  LinkedIn
-  
-  Login
-  Sign Up
+      </nav>
+    </header>
 
   A modern publishing platform
   Grow your audience and build your online brand
@@ -93,7 +129,9 @@
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Bianca Brando</a>.
+    Coded by <a href="https://github.com/bemibrando">Bianca Brando</a>.
   </div>
+  <!-- ============ MAIN JS ===========-->
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
