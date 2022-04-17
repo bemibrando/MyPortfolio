@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--============ UNICONS ===========-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
-    <!--============ SWIPER CSS ===========-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-
-    <!--============ CSS ===========-->
-    <link rel="stylesheet" href="assets/css/styles.css">
-
-    <title>Bianca Brando</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--============ UNICONS ===========-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <!--============ SWIPER CSS ===========-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <!--============ CSS ===========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <title>Bianca Brando</title>
+    </head>
     <body>
         <!--============ HEADER ===========-->
         <header class="header" id="header">
             <nav class="nav container">
                 <a href="#" class="nav__logo">Bianca</a>
-
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
                         <li class="nav__item">
@@ -62,18 +57,15 @@
                     </ul>
                     <i class="uil uil-times nave__close nav__close" id="nav-close"></i>
                 </div>
-
                 <div class="nav__btns">
                     <!-- Theme change button -->
                     <i class="uil uil-moon change-theme" id="theme-button"></i>
-
                     <div class="nav__toggle" id="nav-toggle">
                         <i class="uil uil-apps"></i>
                     </div>
                 </div>
             </nav>
         </header>
-
         <!--============ MAIN ===========-->
         <main class="main">
             <!--============ HOME ===========-->
@@ -84,35 +76,18 @@
                             <a href="https://www.linkedin.com/in/bianca-emi/" target="_blank" class="home__social-icon">
                                 <i class="uil uil-linkedin-alt"></i>
                             </a>
-
                             <a href="https://github.com/bemibrando" target="_blank" class="home__social-icon">
                                 <i class="uil uil-github-alt"></i>
                             </a>
-
                             <a href="https://twitter.com/bemibrando" target="_blank" class="home__social-icon">
                                 <i class="uil uil-twitter-alt"></i>
                             </a>
                         </div>
-
-                        <div class="home__img">
-                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <mask id="mask0" mask-type="alpha">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                </mask>
-                                <g mask="url(#mask0)">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                    
-                                    <image class="home__blob-img" x="12" y="18" href="assets/img/perfil.jpg"/>
-                                </g>
-                            </svg>
+                        <div class="home__img home__circle">
+                            <div class="img__circle"></div>
+                            <div class="img__circle"></div>
+                            <img class="home__circle-img" src="assets/img/perfil.jpg" alt="BiancaProfilePhoto"/>             
                         </div>
-
                         <div class="home__data">
                             <h1 class="home__title">Hi,<br>I'm Bianca Emi</h1>
                             <h3 class="home__subtitle">Front-end Developer</h3>
@@ -122,7 +97,6 @@
                             </a>
                         </div>
                     </div>
-
                     <div class="home__scroll">
                         <a href="#about" class="home__scroll-button button--flex">
                             <i class="uil uil-mouse-alt home__scroll-mouse"></i>
@@ -132,40 +106,38 @@
                     </div>
                 </div>
             </section>
-
             <!--============ ABOUT ===========-->
             <section class="about section" id="about">
                 <h2 class="section__title">About Me</h2>
                 <span class="section__subtitle">My introduction</span>
-
                 <div class="about__container container grid">
-                    <img src="assets/img/about.png" alt="" class="about__img">
-
+                    <img src="assets/img/about.png" alt="BiancaProfilePhoto2" class="about__img">
                     <div class="about__data">
                         <p class="about__description">
-                            I'm an avid reader, well-organised person, problem solver and independent coder.
-                            <br>
-                            I currently work remotely with a selected freelance client base being open for new opportunities.
+                            I'm an avid reader, <i class="uil uil-book-open"></i>
+                            <br>well-organised person, <i class="uil uil-archive"></i>
+                            <br>problem solver <i class="uil uil-coronavirus"></i> <i class="uil uil-virus-slash"></i>
+                            <br>and independent coder. <i class="uil uil-robot"></i>
+                            <br><br><br>
+                            I currently work remotely 
+                            <br>with a selected freelance client base <i class="uil uil-bag"></i>
+                            <br>being open for new opportunities. <i class="uil uil-chat-info"></i>
                         </p>
                     </div>
-
                     <div class="about__info">
                         <div>
                             <span class="about__info-title">01</span>
                             <span class="about__info-name">Year <br> experience</span>
                         </div>
-
                         <div>
                             <span class="about__info-title">10+</span>
                             <span class="about__info-name">Completed <br> projects</span>
                         </div>
-
                         <!-- <div>
                             <span class="about__info-title">01+</span>
                             <span class="about__info-name">Companies <br> worked</span>
                         </div> -->
                     </div>
-
                     <div class="about__buttons">
                         <a download="" href="assets/pdf/BiancaEmi_Curriculum.pdf" class="button button--flex">
                             Download CV<i class="uil uil-download-alt button__icon down__animation"></i>
@@ -173,28 +145,23 @@
                     </div>
                 </div>
             </section>
-
             <!--============ SKILLS ===========-->
             <section class="skills section" id="skills">
                 <h2 class="section__title">Skills</h2>
                 <span class="section__subtitle">My technical level</span>
-
                 <div class="skills__container container grid">
                     <!--====== SKILLS 1 ======-->
                     <div class="skills__content skills__close">
                         <div class="skills__header">
                             <i class="uil uil-brackets-curly skills__icon"></i>
-
                             <div class="skills__titlegrid">
                                 <h1 class="skills__title">Front-end developer</h1>
                                 <div class="skills__bar">
                                      <span class="skills__percentage skills__front"></span>
                                 </div>
                             </div>
-
                             <i class="uil uil-angle-down skills__arrow"></i>
                         </div>
-
                         <div class="skills__list grid">
                             <div class="skills__data">
                                 <div class="skills__title">
@@ -210,25 +177,20 @@
                                     <h3 class="skills__name">React & Vue</h3>
                                 </div>
                             </div>
-
                         </div>
-                    </div>
-                    
+                    </div>                    
                     <!--====== SKILLS 2 ======-->
                     <div class="skills__content skills__close">
                         <div class="skills__header">
                             <i class="uil uil-server-network skills__icon"></i>
-
                             <div class="skills__titlegrid">
                                 <h1 class="skills__title">Back-end developer</h1>
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__front"></span>
                                 </div>
                             </div>
-
                             <i class="uil uil-angle-down skills__arrow"></i>
                         </div>
-
                         <div class="skills__list grid">
                             <div class="skills__data">
                                 <div class="skills__title">
@@ -244,15 +206,12 @@
                                     <h3 class="skills__name">API</h3>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-
                         <!--====== SKILLS 3 ======-->
                         <div class="skills__content skills__close">
                             <div class="skills__header">
                                 <i class="uil uil-folder-heart skills__icon"></i>
-
                                 <div>
                                     <ul>
                                         <h1 class="skills__title">Soft Skills</h1>
@@ -261,10 +220,8 @@
                                         </div>
                                     </ul>
                                 </div>
-
                                 <i class="uil uil-angle-down skills__arrow"></i>
                             </div>
-
                             <div class="skills__list grid">
                                 <div class="skills__data">
                                     <div class="skills__title">
@@ -274,26 +231,20 @@
                                         <h3 class="skills__name">API</h3>
                                     </div>
                                 </div>
-
-
                             </div>
                         </div>
-                        
                         <!--====== SKILLS 4 ======-->
                         <div class="skills__content skills__close">
                             <div class="skills__header">
                                 <i class="uil uil-brain skills__icon"></i>
-
                                 <div class="skills__titlebar">
                                     <h1 class="skills__title">Extra Skills</h1>
                                     <div class="skills__bar">
                                          <span class="skills__percentage skills__extra"></span>
                                     </div>
                                 </div>
-
                                 <i class="uil uil-angle-down skills__arrow"></i>
                             </div>
-
                             <div class="skills__list grid">
                                 <div class="skills__data">
                                     <div class="skills__title">
@@ -303,101 +254,100 @@
                                         <h3 class="skills__name">API</h3>
                                     </div>
                                 </div>
-
                             </div>
-
                     </div>
                 </div>
             </section>
-
             <!--============ QUALIFICATION ===========-->
             <section class="qualification section">
-                <h2 class="section__title">Qualification</h2>
-                <span class="section__subtitle">My personal journey</span>
-
+                <h2 class="section__title">Qualifications</h2>
+                <div class="section__subtitle">My personal journey</div>    
                 <div class="qualification__container container">
                     <div class="qualification__tabs">
                         <div class="qualification__button button--flex qualification__active" data-target="#education">
-                            <i class="uil uil-graduation-cap qualification__icon "></i>
+                            <i class="uil uil-graduation-cap qualification__icon"></i>
                             Education
                         </div>
-                        
                         <div class="qualification__button button--flex" data-target="#work">
                             <i class="uil uil-briefcase-alt qualification__icon"></i>
                             Work
                         </div>
-                    </div>
-
+                    </div>    
                     <div class="qualification__sections">
-                        <!--====== QUALIFICATION CONTENT 1 ======-->
+                        <!--============ EDUCATION CONTENT ===========-->
                         <div class="qualification__content qualification__active" data-content id="education">
-                            <!--====== QUALIFICATION 1 ======-->
-                            <div class="qualification__data">
-                                <div>
-                                    <h3 class="qualification__title">Computer</h3>
-                                    <span class="qualification__subtitle">Brazil - Univer</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        20XX-20XX
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--===== QUALIFICATION CONTENT 2 =====-->
-                        <div class="qualification__content" data-content id="work">
-                            <!--====== QUALIFICATION 2 ======-->
+                            <!--=============================== EDU 3 ===========================-->    
+                            <!--=============================== EDU 2 ===========================-->
                             <div class="qualification__data">
                                 <div></div>
-                                
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>    
+                                <div>
+                                    <h3 class="qualification__title">Spread Fullstack Developer Certificate</h3>
+                                    <span class="qualification__subtitle">Dio</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        April, 2022 - coming
+                                    </div>
+                                </div>    
+                            </div>
+                            <!--=============================== EDU 1 ===========================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Responsive Web Development Certificate</h3>
+                                    <span class="qualification__subtitle">freeCodeCamp</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        April, 2022 - coming
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--============ WORK CONTENT ===========-->
+                        <div class="qualification__content" data-content id="work">
+                            <!--===============================QUALIFICATION 1 ===========================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Web Development</h3>
+                                    <span class="qualification__subtitle">Freelance</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                         April, 2022 - Running
+                                    </div>
+                                </div>    
                                 <div>
                                     <span class="qualification__rounder"></span>
                                     <span class="qualification__line"></span>
                                 </div>
-
-                                <div>
-                                    <h3 class="qualification__title">Computer</h3>
-                                    <span class="qualification__subtitle">Brazil - Univer</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        20XX-20XX
-                                    </div>
-                                </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
-
             <!--============ SERVICES ===========-->
             <setion class="services section" id="services">
                 <h2 class="section__title">Services</h2>
                 <span class="section__subtitle">What I offer</span>
-
                 <div class="services__container container grid">
                         <!--====== SERVICES 1 ======-->
-                        <div class="services__content">
+                        <div class="services__content">                            
                             <div>
                                 <i class="uil uil-web-grid services__icon"></i>
                                 <h3 class="services__title">UI / UX <br> Designer</h3>
                             </div>
-
                             <span class="button button--flex button--small button--link services__button">
                                 View More
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </span>
-
                             <div class="services__modal">
                                 <div class="services__modal-content">
                                     <h4 class="services__modal-title">UI / UX <br> Designer</h4>
                                     <i class="uil uil-times services__modal-close"></i>
-
                                     <ul class="services__modal-services grid">
                                         <li class="services__modal-service">
                                             <i class="uil uil-check-circle services__modal-icon"></i>
@@ -431,17 +381,14 @@
                                 <i class="uil uil-arrow services__icon"></i>
                                 <h3 class="services__title">Front-end <br> Developer</h3>
                             </div>
-
                             <span class="button button--flex button--small button--link services__button">
                                 View More
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </span>
-
                             <div class="services__modal">
                                 <div class="services__modal-content">
                                     <h4 class="services__modal-title">Front-end <br> Developer</h4>
                                     <i class="uil uil-times services__modal-close"></i>
-
                                     <ul class="services__modal-services grid">
                                         <li class="services__modal-service">
                                             <i class="uil uil-check-circle services__modal-icon"></i>
@@ -475,17 +422,14 @@
                                 <i class="uil uil-pen services__icon"></i>
                                 <h3 class="services__title">Back-end <br> Developer</h3>
                             </div>
-
                             <span class="button button--flex button--small button--link services__button">
                                 View More
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </span>
-
                             <div class="services__modal">
                                 <div class="services__modal-content">
                                     <h4 class="services__modal-title">Branding <br> Designer</h4>
                                     <i class="uil uil-times services__modal-close"></i>
-
                                     <ul class="services__modal-services grid">
                                         <li class="services__modal-service">
                                             <i class="uil uil-check-circle services__modal-icon"></i>
@@ -515,18 +459,15 @@
                         </div>
                 </div>
             </setion>
-
             <!--============ PORTFOLIO ===========-->
             <section class="portfolio section" id="portfolio">
                 <h2 class="section__title">Portfolio</h2>
                 <span class="section__subtitle">Most recent work</span>
-
                 <div class="portfolio__container container swiper">
                     <div class="swiper-wrapper">
                         <!--====== PORTFONIO 1 ======-->
                         <div class="portfolio__content grid swiper-slide">
                             <img src="assets/img/portfolio1.png" alt="" class="portfolio__img">
-
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Modern Website</h3>
                                 <p class="porfolio__description">
@@ -538,11 +479,9 @@
                                 </a>
                             </div>
                         </div>
-
                         <!--====== PORTFONIO 2 ======-->
                         <div class="portfolio__content grid swiper-slide">
                             <img src="assets/img/portfolio2.png" alt="" class="portfolio__img">
-
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Singing Cat</h3>
                                 <p class="porfolio__description">
@@ -554,13 +493,11 @@
                                 </a>
                             </div>
                         </div>
-
                         <!--====== PORTFONIO 3 ======-->
                         <div class="portfolio__content grid swiper-slide">
                             <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img">
-
                             <div class="portfolio__data">
-                                <h3 class="portfolio__title">Sexy Cat</h3>
+                                <h3 class="portfolio__title">Landing Page Challenge</h3>
                                 <p class="porfolio__description">
                                     Website adaptable to all devices, with UI components and animated interactions.
                                 </p>
@@ -571,7 +508,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Add Arrows -->
                     <div class="swiper-button-next">
                         <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
@@ -581,10 +517,8 @@
                     </div>
                     <!-- Add Pagination -->
                     <div class="swiper-pagination"></div>
-
                 </div>
             </section>
-
             <!--============ PROJECT IN MIND ===========-->
             <section class="project section">
                 <div class="project__bg">
@@ -597,17 +531,14 @@
                                 <i class="uil uil-message project__icon button__icon"></i>
                             </a>
                         </div>
-
                         <img src="assets/img/project.jpeg" alt="" class="project__img">
                     </div>
                 </div>
             </section>
-
             <!--============ TESTIMONIAL ===========-->
             <section class="testimonial section">
                 <h2 class="section__title">Testimonial</h2>
                 <span class="section__subtitle">My client saying</span>
-
                 <div class="testimonial__container container swiper">
                     <div class="swiper-wrapper">
                         <!--====== TESTIMONIAL 1 ======-->
@@ -615,7 +546,6 @@
                             <div class="testimonial__data">
                                 <div class="testimonial__header">
                                     <img src="assets/img/perfil.jpg" alt="" class="testimonial__img">
-
                                     <div>
                                         <h3 class="testimonial__name">XXXX XXXX</h3>
                                         <span class="testimonial__client">Client</span>
@@ -636,7 +566,6 @@
                             <div class="testimonial__data">
                                 <div class="testimonial__header">
                                     <img src="assets/img/perfil.jpg" alt="" class="testimonial__img">
-
                                     <div>
                                         <h3 class="testimonial__name">XXXX XXXX</h3>
                                         <span class="testimonial__client">Client</span>
@@ -657,7 +586,6 @@
                             <div class="testimonial__data">
                                 <div class="testimonial__header">
                                     <img src="assets/img/perfil.jpg" alt="" class="testimonial__img">
-
                                     <div>
                                         <h3 class="testimonial__name">XXXX XXXX</h3>
                                         <span class="testimonial__client">Client</span>
@@ -674,39 +602,31 @@
                             <p class="testimonial__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                         </div>
                     </div>
-
                     <!-- Add Pagination -->
                     <div class="swiper-pagination swiper-pagination-testimonial"></div>
                 </div>
-
             </section>
-
             <!--============ CONTACT ME ===========-->
             <section class="contact section" id="contact">
                 <h2 class="section__title">Contact Me</h2>
                 <span class="section__subtitle">If you have any request or question, Get in touch!</span>
-
                 <div class="contact__container container grid">
                     <div>
                         <div class="contact__information">
                             <i class="uil uil-envelope contact__icon"></i>
-
                             <div>
                                 <h3 class="contact__title">E-mail</h3>
                                 <span class="contact__subtitle">bemi.brando@outlook.com</span>
                             </div>
                         </div>
-                        
                         <div class="contact__information">
                             <i class="uil uil-map-marker contact__icon"></i>
-
                             <div>
                                 <h3 class="contact__title">Location</h3>
                                 <span class="contact__subtitle">Brazil</span>
                             </div>
                         </div>
                     </div>
-
                     <form action="" class="contact__form grid">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
@@ -731,16 +651,11 @@
                                 Send Message
                                 <i class="uil uil-message button__icon"></i>
                             </a>
-
                         </div>
-
                     </form>
                 </div>
             </section>
-
-
         </main>
-
         <!--============ FOOTER ===========-->
         <footer class="footer">
             <div class="footer__bg">
@@ -749,7 +664,6 @@
                         <h1 class="footer__title">Bianca Emi</h1>
                         <span class="footer__subtitle">Front-end Developer</span>
                     </div>
-
                     <ul class="footer__links">
                         <li>
                             <a href="#services" class="footer__link">Services</a>
@@ -761,34 +675,27 @@
                             <a href="#contact" class="footer__link">Contactme</a>
                         </li>
                     </ul>
-
                     <div class="footer__socials">
                         <a href="https://www.instagram.com/bemi.brando/" target="_blank" class="footer__social">
                             <i class="uil uil-instagram"></i>
                         </a>
-
                         <a href="https://www.snapchat.com/add/bemi.brando?share_id=RDg0NjRE&locale=en_BR" target="_blank" class="footer__social">
                             <i class="uil uil-snapchat-alt"></i>
                         </a>
-
                         <a href="https://twitter.com/bemibrando" target="_blank" class="footer__social">
                             <i class="uil uil-twitter-alt"></i>
                         </a>
                     </div>
                 </div>
-
                 <p class="footer__copy">&#169; Bemicode. All right reserved</p>
             </div>
         </footer>
-
         <!--============ SCROLL UP ===========-->
         <a href="" class="scrollup" id="scroll-up">
             <i class="uil uil-arrow-up scrollup__icon scroll__animation"></i>
         </a>
-
         <!--============ SWIPER JS ===========-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
-            
+        <script src="assets/js/swiper-bundle.min.js"></script> 
         <!-- ============ MAIN JS ===========-->
         <script src="assets/js/main.js"></script>
     </body>

@@ -84,8 +84,8 @@ body.dark-theme{
     --input-color: hsl(var(--hue-color), 26%, 16%);
     --body-color: hsl(var(--hue-color), 28%, 12%);
     --container-color: hsl(var(--hue-color), 29%, 16%);
-    --scroll-bar-color: hsl(var(--hue-color), 12%, 48%)
-    --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%)
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 }
 
 /*#endregion*/
@@ -307,13 +307,50 @@ img{
     color: var(--first-color-alt);
 }
 
-.home__blob{
-    width: 200px;
-    fill: var(--first-color);
+.home__circle{
+    margin-bottom: 1em;
+    background-color: var(--first-color);
+    height: 18em;
+    width: 18em;
+    border-radius: 50%;
+    position: relative block;
+    cursor: pointer flex;
 }
 
-.home__blob-img{
-    width: 170px;
+.home__circle-img{
+    position: relative;
+    top: -38.6em;
+    left: .3em;
+    border-radius: 50%;
+    width: 17.5em;
+    height: 17.5em;
+}
+
+.img__circle{
+    position: relative;
+    width: 19em;
+    height: 19em;
+    top: -.5em;
+    left: -.4em;
+    border-width: .2em;
+    border-style: solid;
+    border-color: var(--first-color-alt) var(--first-color-alt) var(--first-color-alt) transparent;
+    border-radius: 50%;
+    transition: transform 1.5s ease-in-out;
+}
+.home__circle:hover > .img__circle:nth-child(1){
+    transform: rotate(360deg);
+}
+
+.img__circle:nth-child(2) {
+    width: 19.9em;
+    height: 19.9em;
+    top: -19.9em;
+    left: -.9em;
+    border-color:var(--first-color) transparent var(--first-color) var(--first-color);
+}
+.home__circle:hover > .img__circle:nth-child(2){
+    transform: rotate(-360deg);
 }
 
 .home__data{
@@ -605,7 +642,7 @@ img{
 .qualification__button{
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .qualification__button:hover{
@@ -665,6 +702,11 @@ img{
 
 .qualification__button.qualification__active{
     color: var(--first-color);
+}
+
+.qualification__tech{
+    border-bottom: 3px solid var(--first-color-alt);
+    border-radius: .2rem;
 }
 /*#endregion*/
 
@@ -1074,9 +1116,6 @@ img{
     .home__content{
         grid-template-columns: .25fr 3fr;
     }
-    .home__blob{
-        width: 180px;
-    }
 
     .skills__title{
         font-size: var(--normal-font-size);
@@ -1201,9 +1240,6 @@ img{
         padding-top: 5.5rem;
         column-gap: 2rem;
     }
-    .home__blob{
-        width: 270px;
-    }
     .home__scroll{
         display: block;
     }
@@ -1301,10 +1337,6 @@ img{
     .main,
     .footer__container{
         padding: 0;
-    }
-
-    .home__blob{
-        width: 320px;
     }
     .home__social{
         transform: translateX(-6rem);
